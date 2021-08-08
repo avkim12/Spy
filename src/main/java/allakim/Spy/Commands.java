@@ -44,7 +44,7 @@ public class Commands extends ListenerAdapter {
 
             List<String> lines;
             try {
-                lines = Files.readAllLines(Paths.get("C:\\Users\\Kim\\Desktop\\Spy\\src\\main\\resources\\Locations"));
+                lines = Files.readAllLines(Paths.get(""));
             } catch (IOException e) {
                 e.printStackTrace();
                 return;
