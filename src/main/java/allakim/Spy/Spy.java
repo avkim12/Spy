@@ -20,7 +20,7 @@ public class Spy {
     public static void main(String[] args) throws LoginException {
 
         jda = JDABuilder.createDefault(Constants.TOKEN).build();
-        jda.getPresence().setActivity(Activity.watching("Kaifuku Jutsushi no Yarinaoshi"));
+        jda.getPresence().setActivity(Activity.watching("Big Bang Theory"));
         jda.addEventListener(new Commands());
     }
 }
