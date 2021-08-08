@@ -52,9 +52,6 @@ public class Commands extends ListenerAdapter {
 
             String location = lines.get(new Random().nextInt(lines.size()));
 
-            //TODO: if member is muted, he's not able to play spy
-            //TODO: if members.size changes, the program may drop
-
             ArrayList<Member> members = new ArrayList<>(voiceChannel.getMembers());
             int spyIndex = ThreadLocalRandom.current().nextInt(0, members.size());
             for (int i = 0; i < members.size(); i++) {
